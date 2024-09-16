@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Roboto+Condensed:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-h1
+    }
+    body {
+        @apply text-p
+    }
+}
+
+:root {
+    --color-blue: #0032A0;
+    --color-red: #BF0D3E;
+    --color-yellow: #FED141;
+    --color-peach: #F5CBB7;
+    --color-pink: #E77E9B;
+    --color-light-brown: #BBA686;
+    --color-brown: #4F2D20;
+    --color-dark-green: #346830;
+
+    --font-primary: "Roboto Condensed", sans-serif;
+    --font-secondary: "Open Sans", sans-serif;
+}
+
+.open-sans {
+    font-family: var(--font-secondary);
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.roboto-condensed {
+   font-family: var(--font-primary);
+   font-optical-sizing: auto;
+   font-style: normal;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    color: #fff;
+    fill: #fff;
+    font-family: var(--font-primary);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    min-width: 100px;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+header ul li a svg {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+header ul li.menu-item-home.current-menu-item a {
+    background-color: var(--color-yellow);
+}
+
+header ul li.menu-item-explore.current-menu-item a {
+    background-color: var(--color-red);
+}

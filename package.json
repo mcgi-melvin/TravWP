@@ -1,0 +1,15 @@
+{
+  "name": "trav",
+  "version": "1.0.0",
+  "description": "Trav",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind-watch": "npx tailwindcss -i ./assets/css/style-input.css -o ./assets/css/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

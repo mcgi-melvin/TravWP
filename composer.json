@@ -1,0 +1,16 @@
+{
+    "name": "digizan/trav",
+    "description": "Official Trav Platform",
+    "autoload": {
+        "psr-4": {
+            "Trav\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Melvin Lomibao",
+            "email": "melvinlomibao@gmail.com"
+        }
+    ],
+    "require": {}
+}
